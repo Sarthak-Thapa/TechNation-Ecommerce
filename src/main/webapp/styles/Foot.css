@@ -1,0 +1,39 @@
+
+footer{
+    /* background-color: bisque; */
+    min-width: 100%;
+
+}
+
+.my_link{
+    list-style: none;
+}
+
+.email_id{
+    width: fit-content;
+    border-bottom: 1px solid;
+}
+
+footer .social-icon li a{
+    font-size: 2em;
+    margin: 0 10px;
+    color:white;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+ul li a{
+    text-decoration: none;
+}
+
+.social-icon{
+    display: flex;
+    list-style: none;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+}
+
+footer .social-icon li a:hover{
+    transform: translateY(-10px);
+}

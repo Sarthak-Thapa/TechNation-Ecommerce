@@ -1,0 +1,36 @@
+
+
+    .cat-card{
+        border-radius: 8px;
+        overflow: hidden;
+        transition: 0.5s;
+        cursor: pointer;
+    }
+    .cat-card img{
+        opacity: 50%;
+        filter: blur(1px);
+        transition: 0.5s;
+        height: 210px;
+        object-fit: cover;
+    
+    
+    }
+    
+    .card-img-overlay{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .cat-card:hover .cat-card-img{
+        cursor: pointer;
+        filter: none;
+        opacity: 75%;
+    }
+    .cat-card:hover,
+    .cat-card:hover .cat-card-img{
+        transform: scale(1.1);
+    }
+
+
