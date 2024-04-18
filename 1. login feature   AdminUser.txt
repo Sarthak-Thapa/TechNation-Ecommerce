@@ -1,0 +1,31 @@
+1. login feature   Admin/User
+2. Admin Panel
+	User Authentication
+	Product Management
+	Order List
+3. User Profle Page
+	Profile Information
+	Update required user information(Edit)
+	Not login (Page should be hidden)
+4. About Us Page
+	User should be able to contact via phone number/s.
+	User should be able to contact via email and message description.
+
+5. Home Page
+	Only user can login to this feature.
+	There should be (search) feature from where user can search product according to the product price and name.
+	User can view the list of products with the product information like image, price, stock, add to cart option and other desired information.
+	Can be accessed even when user is not (logged in).
+
+--When user is not logged in [7 marks]
+	There should be login button from where user can go the login page
+	When user navigates to view cart list page, proper message should be shown denoting login is required to add the product.
+	When the add to cart option is click proper message should be shown denoting login is required to add the product.
+--When user is logged in [10 marks]	
+	User can logout from the system (when the user is logged out all the session should be expired)
+	User should be able to view the list of all products.
+	User should be able to add product to their cart
+	User should be able to view their cart items
+	User should be able to remove specific cart items
+	User should be able to order all the items from cart list.
+	User should be only able to view their history of ordered items.
