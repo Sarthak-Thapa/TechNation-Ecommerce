@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gadget</title>
+    <link rel="website icon" type="jpg" href="1.jpg">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="boot.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="Category.css">
+    <link rel="stylesheet" href="Trending.css">
+    <link rel="stylesheet" href="footer.css">
+</head>
+<style>
+
+    body{
+        background-color: ;
+    }
+    .c-item {
+        height: 380px;
+    }
+
+    .c-img {
+        height: 300px;
+        object-fit: scale-down;
+    }
+
+    @media (min-width: 992px) {
+        .slogan {
+            margin-top: 5rem;
+            /* Apply top margin only on large screens */
+        }
+    }
+</style>
+</head>
+
+<body>
+    <!------------------------------------------------------------------Navbar--------------------------------------->
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid">
+
+            <!--toggle button for mobile nav view-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!--navbar links-->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Portfolio</a>
+                    </li>
+                </ul>
+                <a class="navbar-brand mx-auto" href="#">Gadget</a>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-dark" style="width: 110px;" type="submit">Search</button>
+                    <button type="button" class="btn" style="width: 110px;" type="submit">Log in</button>
+                    <button type="button" class="btn btn-dark btn-sm" style="width: 110px;" type="submit">Sign up</button>
+                    <img src="https://static.vecteezy.com/system/resources/previews/004/999/463/original/shopping-cart-icon-illustration-free-vector.jpg"
+                        class="cart-img" alt="cart">
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!------------------------------------------------------------------Navbar--------------------------------------->
+
+    <!------------------------------------------------------------------Slider/carousel--------------------------------------->
+
+    <div class="container-fluid">
+        <div class="row gy-3">
+            <div class="col-lg-5 col-sm-8">
+                <div class="pt-5 text-light">
+                    <div id="home-carousel" class="carousel carousel-dark slide c-class" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#home-carousel" data-bs-slide-to="0" class="active"
+                                aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#home-carousel" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#home-carousel" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#home-carousel" data-bs-slide-to="3"
+                                aria-label="Slide 4"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active c-item">
+                                <img src="/images/0.jpg" class="w-100 c-img" alt="...">
+                            </div>
+                            <div class="carousel-item c-item">
+                                <img src="/images/1.jpg" class="w-100 c-img" alt="...">
+                            </div>
+                            <div class="carousel-item c-item">
+                                <img src="/images/t1.jpeg" class="w-100 c-img" alt="...">
+                            </div>
+                            <div class="carousel-item c-item">
+                                <img src="/images/3.jpg" class="w-100 c-img" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#home-carousel"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#home-carousel"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-7 col-sm-4 fs-1">
+                <div class="p-5 slogan">
+                    <p class="text-center fw-bold">
+                        Discover Your Next Gadget Adventure Here
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!------------------------------------------------------------------Slider/carousel--------------------------------------->
+
+
+
+    <!-------------------------Product slider img html------------------------ -->
+    <h2 class="text-center mt-3">Trending Now</h2>
+    <div class="scrolling-container mt-4">
+        <div class="text-center trend-card border border-light-subtile rounded-3">
+                <img src="/images/1.jpg" alt="">
+                <h4 class="trend-title mt-3">Acer Nitro 5</h4>
+                <p class="my-2 text-primary fw-bold">Rs.1,30,000</p>
+                <p class="star lead text-muted">
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    (89)
+                </p>
+                <a href="#" class="btn btn-outline-dark btn-lg ">Add to cart <i class="bi bi-cart3"></i></a>
+        </div>
+        <div class="text-center trend-card border border-light-subtile rounded-3">
+                <img src="/images/2.jpg" alt="">
+                <h4 class="card-title mt-3">Asus ROG Phone 7</h4>
+                <p class="my-2 text-primary fw-bold">Rs.1,38,000</p>
+                <p class="star lead text-muted">
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-half text-warning"></i>
+                    (40)
+                </p>
+                <a href="#" class="btn btn-outline-dark btn-lg ">Add to cart <i class="bi bi-cart3"></i></a>
+        </div>
+        <div class="text-center trend-card border border-light-subtile rounded-3">
+                <img src="/images/3.jpg" alt="">
+                <h4 class="card-title mt-3">Logitech - G PRO</h4>
+                <p class="my-2 text-primary fw-bold">Rs.22,000</p>
+                <p class="star lead text-muted">
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star text-warning"></i>
+                    (225)
+                </p>
+                <a href="#" class="btn btn-outline-dark btn-lg ">Add to cart <i class="bi bi-cart3"></i></a>
+        </div>
+        <div class="text-center trend-card border border-light-subtile rounded-3">
+                <img src="/images/4.jpg" alt="">
+                <h4 class="card-title mt-3">Zeblaze GTR 3 Pro</h4>
+                <p class="my-2 text-primary fw-bold">Rs.5,500</p>
+                <p class="star lead text-muted">
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-half text-warning"></i>
+                    <i class="bi bi-star text-warning"></i>
+                    (25)
+                </p>
+                <a href="#" class="btn btn-outline-dark btn-lg ">Add to cart <i class="bi bi-cart3"></i></a>
+        </div>
+        <div class="text-center trend-card border border-light-subtile rounded-3">
+                <img src="/images/t1.jpeg" alt="">
+                <h4 class="card-title mt-3">ELEGIANT LED Speaker</h4>
+                <p class="my-2 text-primary fw-bold">Rs.5,500</p>
+                <p class="star lead text-muted">
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    (50)
+                </p>
+                <a href="#" class="btn btn-outline-dark btn-lg ">Add to cart <i class="bi bi-cart3"></i></a>
+        </div>
+        <div class="text-center trend-card border border-light-subtile rounded-3">
+                <img src="/images/t2.jpg" alt="">
+                <h4 class="card-title mt-3">ROG Claymore Keyboard</h4>
+                <p class="my-2 text-primary fw-bold">Rs.19,000</p>
+                <p class="star lead text-muted">
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star text-warning"></i>
+                    (200)
+                </p>
+                <a href="#" class="btn btn-outline-dark btn-lg ">Add to cart <i class="bi bi-cart3"></i></a>
+        </div>
+
+        <!------REPEAT-->            
+        
+        <div class="text-center trend-card border border-light-subtile rounded-3">
+            <img src="/images/1.jpg" alt="">
+            <h4 class="trend-title mt-3">Acer Nitro 5</h4>
+            <p class="my-2 text-primary fw-bold">Rs.1,30,000</p>
+            <p class="star lead text-muted">
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                (89)
+            </p>
+            <a href="#" class="btn btn-outline-dark btn-lg ">Add to cart <i class="bi bi-cart3"></i></a>
+        </div>
+        <div class="text-center trend-card border border-light-subtile rounded-3">
+                <img src="/images/2.jpg" alt="">
+                <h4 class="card-title mt-3">Asus ROG Phone 7</h4>
+                <p class="my-2 text-primary fw-bold">Rs.1,38,000</p>
+                <p class="star lead text-muted">
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-half text-warning"></i>
+                    (40)
+                </p>
+                <a href="#" class="btn btn-outline-dark btn-lg ">Add to cart <i class="bi bi-cart3"></i></a>
+        </div>
+        <div class="text-center trend-card border border-light-subtile rounded-3">
+                <img src="/images/3.jpg" alt="">
+                <h4 class="card-title mt-3">Logitech - G PRO</h4>
+                <p class="my-2 text-primary fw-bold">Rs.22,000</p>
+                <p class="star lead text-muted">
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star text-warning"></i>
+                    (225)
+                </p>
+                <a href="#" class="btn btn-outline-dark btn-lg ">Add to cart <i class="bi bi-cart3"></i></a>
+        </div>
+        <div class="text-center trend-card border border-light-subtile rounded-3">
+                <img src="/images/4.jpg" alt="">
+                <h4 class="card-title mt-3">Zeblaze GTR 3 Pro</h4>
+                <p class="my-2 text-primary fw-bold">Rs.5,500</p>
+                <p class="star lead text-muted">
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-half text-warning"></i>
+                    <i class="bi bi-star text-warning"></i>
+                    (25)
+                </p>
+                <a href="#" class="btn btn-outline-dark btn-lg ">Add to cart <i class="bi bi-cart3"></i></a>
+        </div>
+        <div class="text-center trend-card border border-light-subtile rounded-3">
+                <img src="/images/t1.jpeg" alt="">
+                <h4 class="card-title mt-3">ELEGIANT LED Speaker</h4>
+                <p class="my-2 text-primary fw-bold">Rs.5,500</p>
+                <p class="star lead text-muted">
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    (50)
+                </p>
+                <a href="#" class="btn btn-outline-dark btn-lg ">Add to cart <i class="bi bi-cart3"></i></a>
+        </div>
+        <div class="text-center trend-card border border-light-subtile rounded-3">
+                <img src="/images/t2.jpg" alt="">
+                <h4 class="card-title mt-3">ROG Claymore Keyboard</h4>
+                <p class="my-2 text-primary fw-bold">Rs.19,000</p>
+                <p class="star lead text-muted">
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star text-warning"></i>
+                    (200)
+                </p>
+                <a href="#" class="btn btn-outline-dark btn-lg ">Add to cart <i class="bi bi-cart3"></i></a>
+        </div>
+    </div>
+
+
+    <!-------------------------slider img html------------------------ -->
+    <!-------------------------Category html------------------------ -->
+    <div class="container category">
+        <h2 class="text-center">Trending Now</h2>
+          <p class="m-2 text-center">Explore and Elevate Your Experience with Electronics</p>
+          <div class="row justify-content-center">
+              <div class="col-6 col-md-4 col-lg-3 m-lg-3 mt-3">
+                  <div class="card text-bg-dark cat-card">
+                      <img src="/images/1.jpg" class="cat-card-img" alt="...">
+                      <div class="card-img-overlay">
+                        <h2 class="catName">Laptops</h2>
+                      </div>
+                    </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3 m-lg-3 mt-3">
+                  <div class="card text-bg-dark cat-card">
+                      <img src="/images/2.jpg" class="cat-card-img" alt="...">
+                      <div class="card-img-overlay">
+                        <h2 class="catName">Smart Phones</h2>
+                      </div>
+                    </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3 m-lg-3 mt-3">
+                  <div class="card text-bg-dark cat-card">
+                      <img src="/images/3.jpg" class="cat-card-img" alt="...">
+                      <div class="card-img-overlay">
+                        <h2 class="catName">Gaming Components</h2>
+                      </div>
+                    </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3 m-lg-3 mt-3">
+                  <div class="card text-bg-dark cat-card">
+                      <img src="/images/4.jpg" class="cat-card-img" alt="...">
+                      <div class="card-img-overlay">
+                        <h2 class="catName">Watches</h2>
+                      </div>
+                    </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3 m-lg-3 mt-3">
+                  <div class="card text-bg-dark cat-card">
+                      <img src="/images/t1.jpeg" class="cat-card-img" alt="...">
+                      <div class="card-img-overlay">
+                        <h2 class="catName">Speaker</h2>
+                      </div>
+                    </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3 m-lg-3 mt-3">
+                  <div class="card text-bg-dark cat-card">
+                      <img src="/images/t2.jpg" class="cat-card-img" alt="...">
+                      <div class="card-img-overlay">
+                        <h2 class="catName">Keyboard</h2>
+                      </div>
+                    </div>
+              </div>
+          </div>
+      </div>
+      <!-------------------------Category html------------------------ -->
+
+      <!-------------------------Footer html------------------------ -->
+    
+      <footer class="bg-dark text-light">
+        <div class="container p-4">
+            <div class="row">
+              <div class="col-3 col-lg-3 col-sm-4">
+                <h2>About</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
+                  non!
+                </p>
+              </div>
+    
+              <div class="col-3 col-lg-3 col-sm-4">
+                <h2 class="px-4">Links</h2>
+                <ul class="my_link">
+                  <li>
+                    <a href="#">Home</a>
+                  </li>
+                  <li>
+                    <a href="#">About</a>
+                  </li>
+                  <li>
+                    <a href="#">Category</a>
+                  </li>
+                  <li>
+                    <a href="#">Products</a>
+                  </li>
+                </ul>
+              </div>
+    
+              <div class="col-6 col-lg-3 col-sm-4">
+                <h3>Customer Care</h3>
+                <address>
+                  <div>
+                    <p>
+                      <span>
+                        <i class="bi bi-geo-alt-fill">Chauthe-14</i>
+                      </span>
+                    </p>
+                  </div>
+                  <div>
+                    <p>
+                      <span>
+                        <i class="bi bi-telephone-fill">+9779847761076</i>
+                      </span>
+                    </p>
+                  </div>
+                  <div>
+                    <p>
+                      <span>
+                        <i class="bi bi-envelope-open-fill email_id"> technation634@gmail.com</i>
+                      </span>
+                    </p>
+                  </div>
+                </address>
+              </div>
+              <div class="col-lg-3">
+                
+                <h3 class="text-center">Connect with us</h3>
+                    <ul class="social-icon ps-1">
+                
+                    <li>
+                        <a href="https://www.facebook.com/">
+                        <i class="bi bi-facebook" ></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/">
+                        <i class="bi bi-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/">
+                        <i class="bi bi-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/">
+                        <i class="bi bi-whatsapp"></i>
+                        </a>
+                    </li>
+                    </ul>
+              </div>
+            </div>
+            <div class="mt-4 c-right text-center">
+                <p>© 2024 <strong>TechNation</strong> | All Rights Reserved.</p>
+                <p>Explore with confidence. <a href="/terms">Terms of Service</a> | <a href="/privacy">Privacy Policy</a></p>
+            </div>
+          </div>
+        
+        
+    </footer>
+
+    
+    <script differ src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
